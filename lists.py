@@ -1,0 +1,22 @@
+friends = list()
+friends.append('Pedro')
+friends.append('Enrique')
+friends.append('Alberto')
+
+print(friends[0])
+
+def average_temps(temps):
+  sum_of_temps = 0
+
+  for temp in temps:
+    sum_of_temps += temp
+
+  return sum_of_temps / len(temps)
+
+
+if __name__ == '__main__':
+  temps = [21, 24, 24, 22, 20, 23, 24]
+
+  average = average_temps(temps)
+
+  print('La temperatura promedio es: {:.1f}'.format(average))
