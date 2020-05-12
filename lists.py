@@ -1,9 +1,22 @@
-friends = list()
-friends.append('Pedro')
-friends.append('Enrique')
-friends.append('Alberto')
+friends1 = list()
+friends1.append('Pedro')
+friends1.append('Enrique')
+friends1.append('Alberto')
+friends1[1] = 'Joaquin'
+friends1.pop()
 
+friends2 = ['María','Consuelo', 'Alejandra']
+
+friends = friends1 + friends2
+print(friends)
+friends.sort()
+print(friends)
+del friends[2]
+print(friends*2)
 print(friends[0])
+group = ['f','r','i','e','n','d','s']
+str_group = ''.join(group)
+print(str_group)
 
 def average_temps(temps):
   sum_of_temps = 0
